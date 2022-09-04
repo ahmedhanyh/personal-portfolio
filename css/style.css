@@ -46,7 +46,7 @@ header {
 .personal-picture > h1 {
   width: 100%;
 
-  color: rgb(8, 145, 178);
+  color: white;
   font-weight: 100;
   font-size: 4rem;
   text-align: center;
@@ -55,9 +55,14 @@ header {
   bottom: 4px;
 }
 
+.personal-picture img {
+  box-shadow: 1px 1px 14px #4d4d4d;
+}
+
 .about {
   padding: 0 24px;
   background-color: white;
+  box-shadow: 1px 1px 14px #4d4d4d;
 }
 
 .about > h2 {
@@ -89,7 +94,8 @@ header {
 
   .personal-picture > h1 {
     text-align: start;
-    left: 4px;
+    left: 8px;
+    font-size: 6rem;
   }
 
   .about {
