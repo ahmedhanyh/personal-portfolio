@@ -17,10 +17,15 @@
 :root {
   font-size: 16px;
   font-family: Roboto, sans-serif;
+
+  /* display: flex;
+  flex-direction: column;
+  gap: 32px; */
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Playfair Display", sans-serif;
 }
 
@@ -96,5 +101,94 @@ header {
 
   .social-sites-links {
     justify-content: center;
+  }
+}
+
+main {
+  padding: 64px;
+}
+
+main > h2 {
+  margin-bottom: 8px;
+}
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: minmax(250px, 1fr);
+  gap: 32px;
+}
+
+.project-card {
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 4px lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.screenshot {
+  padding: 64px 32px;
+  font-size: 2rem;
+  font-family: "Playfair Display", sans-serif;
+  text-align: center;
+  color: white;
+  background-color: rgb(134, 0, 0);
+  flex: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  padding: 12px 24px 64px;
+  flex: 1;
+}
+
+.name {
+  margin-bottom: 16px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.name > span {
+  display: flex;
+  gap: 12px;
+}
+
+.name > span svg {
+  width: 1.5rem;
+}
+
+.screenshot {
+  background-color: #9e1c1c;
+}
+
+.project-card:nth-child(2) .screenshot {
+  background-color: #7c75ca;
+}
+
+.project-card:nth-child(3) .screenshot {
+  background-color: #c363b4;
+}
+
+.project-card:nth-child(4) .screenshot {
+  background-color: #d88f39;
+}
+
+.project-card:nth-child(5) .screenshot {
+  background-color: #7c75ca;
+}
+
+.project-card:nth-child(6) .screenshot {
+  background-color: #5e8f4d;
+}
+
+@media (max-width: 500px) {
+  main > h2 {
+    margin-bottom: 16px;
+    font-size: 2rem;
+    text-align: center;
   }
 }
