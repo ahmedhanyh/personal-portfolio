@@ -26,9 +26,8 @@ h3 {
 }
 
 header {
-  height: 100vh;
   background-color: rgb(8, 145, 178);
-  padding: 0 64px;
+  padding: 64px;
 
   display: flex;
   justify-content: center;
@@ -112,6 +111,16 @@ header {
   }
 }
 
+@media (max-width: 400px) {
+  header {
+    padding: 0;
+  }
+
+  .personal-picture h1 {
+    font-size: 4rem;
+  }
+}
+
 main {
   padding: 64px;
 }
@@ -156,6 +165,10 @@ ul {
 .details {
   padding: 12px 24px 64px;
   flex: 1;
+}
+
+a {
+  color: inherit;
 }
 
 .project-heading-and-links {
@@ -206,6 +219,12 @@ ul {
   main > h2 {
     margin: 16px 0;
     text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    padding: 8px 0;
   }
 }
 
