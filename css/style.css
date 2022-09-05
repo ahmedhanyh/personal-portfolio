@@ -121,6 +121,10 @@ main > h2 {
   font-size: 2rem;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .projects-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -154,20 +158,20 @@ main > h2 {
   flex: 1;
 }
 
-.name {
+.project-heading-and-links {
   margin-bottom: 16px;
 
   display: flex;
   justify-content: space-between;
 }
 
-.name > span {
+.project-heading-and-links span {
   display: flex;
   gap: 12px;
 }
 
-.name > span svg {
-  width: 1.5rem;
+.project-heading-and-links > span svg {
+  width: 24px;
 }
 
 .screenshot {
